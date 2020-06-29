@@ -1,0 +1,28 @@
+<div class="container">
+  <form action="#" (submit) = "onSubmit()">
+    <div class="form-control">
+      <label for="tweet-title"></label>
+      <input
+        type="text"
+        name="tweet-title"
+        id="tweet-title"
+        placeholder="Enter a title..."
+        [(ngModel)]="tweet.title"
+      />
+    </div>
+    <div class="form-control">
+      <label for="tweet-area"></label>
+      <textarea
+        name="tweet-area"
+        id="tweet-area"
+        cols="80"
+        rows="10"
+        placeholder="Tweet..."
+        [(ngModel)]="tweet.text"
+      ></textarea>
+    </div>
+    <div class="form-actions">
+      <button class="btn" type="submit">Tweet</button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,22 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.tweet-card {
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+
+  h1 {
+      margin-bottom: 10px;
+  }
+}
+
+.card-actions {
+  display: flex;
+
+  button {
+      margin-right: 20px;
+  }
+}

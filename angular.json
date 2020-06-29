@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "twit-clone"
+    }
+  },
+  "defaultProject": "twit-clone",
+  "cli": {
+    "analytics": "3ff82426-ce42-4356-ad7f-d9c84523f799"
+  }
 }

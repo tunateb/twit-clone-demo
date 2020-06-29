@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="grid-container">
+    <div class="tweet-card" *ngFor="let tweet of tweets">
+      <h1>{{ tweet.title | titlecase }}</h1>
+      <p>{{ tweet.text }}</p>
+      <hr />
+      <div class="card-actions">
+        <button class="btn" (click) = "onLike(tweet.id)">{{ tweet.likes }} Likes</button>
+
+        <button class="btn" (click) = "onRetweet(tweet.id)">{{ tweet.retweets }} Retweets</button>
+      </div>
+    </div>
+  </div>
+</div>
