@@ -1,15 +1,5 @@
 <div class="container">
-  <form action="#" (submit) = "onSubmit()">
-    <div class="form-control">
-      <label for="tweet-title"></label>
-      <input
-        type="text"
-        name="tweet-title"
-        id="tweet-title"
-        placeholder="Enter a title..."
-        [(ngModel)]="tweet.title"
-      />
-    </div>
+  <form action="#" (submit)="onSubmit()">
     <div class="form-control">
       <label for="tweet-area"></label>
       <textarea

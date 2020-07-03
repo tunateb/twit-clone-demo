@@ -13,7 +13,6 @@
       <i class="fas fa-ellipsis-h profile-action"></i>
       <i class="far fa-bell profile-action"></i>
       <button
-        
         (click)="onFollow()"
         [ngClass]="isFollowed ? 'btn' : 'btn-transparent'"
       >
@@ -34,5 +33,66 @@
       eros et placerat venenatis, massa ipsum mollis metus, ut accumsan sapien
       arcu eu eros. Pellentesque congue semper metus sed venenatis.
     </p>
+
+    <div class="profile-details">
+      <div class="location-wrapper">
+        <i class="fas fa-map-marker-alt"></i>
+        <span class="location">New York, US</span>
+      </div>
+
+      <div class="user-website-wrapper">
+        <i class="fas fa-link"></i>
+        <a href="#" class="link">website.com</a>
+      </div>
+
+      <div class="joined-date-wrapper">
+        <i class="fas fa-calendar-alt"></i>
+        <span class="joined-date">Joined October 2015</span>
+      </div>
+    </div>
+
+    <div class="follow-section">
+      <div class="follow-count">
+        <p><strong>398</strong> <span>Following</span></p>
+      </div>
+      <div class="follow-count">
+        <p><strong>556</strong> <span>Followers</span></p>
+      </div>
+    </div>
+
+    <div class="followers-section">
+      <div class="follower-avatars">
+        <img
+          src="https://unsplash.it/18/18"
+          alt="follower avatar"
+          class="follower-avatar"
+        />
+        <img
+          src="https://unsplash.it/18/18"
+          alt="follower avatar"
+          class="follower-avatar"
+        />
+        <img
+          src="https://unsplash.it/18/18"
+          alt="follower avatar"
+          class="follower-avatar"
+        />
+        <img
+          src="https://unsplash.it/18/18"
+          alt="follower avatar"
+          class="follower-avatar"
+        />
+      </div>
+      <div class="follower-names">
+        <p>Followed by Joe, Soap, and 9 others you follow</p>
+      </div>
+    </div>
+  </div>
+  <div class="profile-links">
+    <a href="#" class="link profile-link">Tweets</a>
+    <a href="#" class="link profile-link">Tweets & replies</a>
+    <a href="#" class="link profile-link">Media</a>
+    <a href="#" class="link profile-link">Likes</a>
+    
   </div>
 </div>

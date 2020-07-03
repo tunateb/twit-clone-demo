@@ -23,7 +23,7 @@
 }
 
 .profile-content {
-  transform: translateY(-50%);
+  transform: translateY(-75px);
   padding: 0 15px;
 
   .profile-name {
@@ -35,6 +35,82 @@
 
     p {
       color: #8a98a4;
+    }
+  }
+}
+
+.profile-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 135px 15px 0;
+
+  .location-wrapper {
+    color: #8a98a4;
+
+    .location {
+      margin-left: 6px;
+    }
+  }
+
+  .user-website-wrapper {
+    color: #8a98a4;
+
+    .link {
+      margin-left: 6px;
+    }
+  }
+
+  .joined-date-wrapper {
+    color: #8a98a4;
+
+    .joined-date {
+      margin-left: 6px;
+    }
+  }
+}
+
+.follow-section {
+  display: flex;
+
+  .follow-count {
+    margin: 0 20px 12px 0;
+
+    span {
+      color: #8a98a4;
+      margin-left: 5px;
+    }
+  }
+}
+
+.followers-section {
+  display: flex;
+
+  .follower-avatars {
+    margin-right: 12px;
+
+    .follower-avatar {
+      border-radius: 50%;
+      border: 1px solid #8a98a4;
+    }
+  }
+
+  .follower-names {
+    color: #8a98a4;
+    font-size: 13px;
+  }
+}
+
+.profile-links {
+  display: flex;
+  justify-content: space-between;
+
+  .profile-link {
+    padding: 0 43px 16px 43px;
+    border-bottom: 2px solid transparent;
+
+    &:hover {
+      border-bottom: 2px solid #4ba0ec;
     }
   }
 }

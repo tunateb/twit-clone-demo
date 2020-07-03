@@ -10,7 +10,6 @@ import { Router } from '@angular/router';
 })
 export class TwitPageComponent implements OnInit {
   tweet: Tweet = {
-    title: '',
     text: '',
   };
 
@@ -23,7 +22,6 @@ export class TwitPageComponent implements OnInit {
 
   onSubmit() {
     this.tweetService.submitTweet(this.tweet);
-    this.tweet.title = '';
     this.tweet.text = '';
     this.router.navigateByUrl('/');
   }
