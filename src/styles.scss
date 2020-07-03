@@ -1,3 +1,5 @@
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
 *,
 *::before,
 *::after {
@@ -6,8 +8,17 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #17202a;
+  color: #fff;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  line-height: 20px;
+}
+
 .container {
-  max-width: 1200px;
+  max-width: 600px;
   margin: 20px auto;
 }
 
@@ -18,13 +29,31 @@ hr {
 .btn {
   cursor: pointer;
   border: none;
-  background-color: blue;
+  background-color: #4ba0ec;
   color: #fff;
-  padding: 10px 30px;
-  border-radius: 4px;
- 
+  padding: 11px 17px;
+  border-radius: 100px;
+  width: 105px;
+  height: 40px;
+  outline: none;
 
   &:hover {
-    background-color: darken(blue, 10%);
+    background-color: darken(#4ba0ec, 10%);
+  }
+}
+
+.btn-transparent {
+  cursor: pointer;
+  border: 1px solid #4ba0ec;
+  background-color: transparent;
+  color: #fff;
+  padding: 11px 17px;
+  border-radius: 100px;
+  width: 105px;
+  height: 40px;
+  outline: none;
+
+  &:hover {
+    background-color: darken(#4ba0ec, 10%);
   }
 }

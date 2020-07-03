@@ -1,0 +1,38 @@
+<div class="profile-container">
+  <img src="https://unsplash.it/597/198" alt="header" class="profile-header" />
+  <div class="profile-section">
+    <div class="profile-pic-wrapper">
+      <img
+        src="https://unsplash.it/134/134"
+        alt="profile pic"
+        class="profile-pic"
+      />
+    </div>
+
+    <div class="profile-actions">
+      <i class="fas fa-ellipsis-h profile-action"></i>
+      <i class="far fa-bell profile-action"></i>
+      <button
+        
+        (click)="onFollow()"
+        [ngClass]="isFollowed ? 'btn' : 'btn-transparent'"
+      >
+        {{ isFollowed ? "Following" : "Follow" }}
+      </button>
+    </div>
+  </div>
+
+  <div class="profile-content">
+    <div class="profile-name">
+      <h2>John</h2>
+      <p>@John</p>
+    </div>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas libero
+      ligula, aliquet quis augue aliquet, tincidunt aliquam urna. Cras iaculis,
+      eros et placerat venenatis, massa ipsum mollis metus, ut accumsan sapien
+      arcu eu eros. Pellentesque congue semper metus sed venenatis.
+    </p>
+  </div>
+</div>

@@ -8,27 +8,41 @@ export class TweetServiceService {
   tweets: Tweet[] = [
     {
       id: 1,
-      title: 'lorem',
+
       text:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat eget libero eu lobortis. Praesent porttitor mi sed molestie ornare. Aliquam mattis felis quis elit hendrerit mollis. Morbi eu turpis in turpis ornare sodales. Suspendisse leo enim, gravida at tellus nec, porttitor consequat purus. ',
+        'Design I was completely - reading Inclusive Design Katie Koch//Spotify - just how to be missed you are.',
       likes: 200,
       retweets: 400,
+      comments: 10,
     },
     {
       id: 2,
-      title: 'lorem',
+
       text:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat eget libero eu lobortis. Praesent porttitor mi sed molestie ornare. Aliquam mattis felis quis elit hendrerit mollis. Morbi eu turpis in turpis ornare sodales. Suspendisse leo enim, gravida at tellus nec, porttitor consequat purus. ',
+        "Have planners abandoned behavioral economics? Personalize Your Research Insights I'm great time I could! ",
       likes: 300,
       retweets: 500,
+      comments: 12,
     },
     {
       id: 3,
-      title: 'lorem',
+
       text:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat eget libero eu lobortis. Praesent porttitor mi sed molestie ornare. Aliquam mattis felis quis elit hendrerit mollis. Morbi eu turpis in turpis ornare sodales. Suspendisse leo enim, gravida at tellus nec, porttitor consequat purus. ',
+        'Not a fan of Trumps humm talking about educating kids on the sweeteners fresh non sweetened?',
       likes: 10,
       retweets: 20,
+      comments: 152,
+      imageUrl: 'https://unsplash.it/509/266'
+    },
+    {
+      id: 4,
+
+      text:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat eget libero eu lobortis. Praesent porttitor mi sed molestie ornare. Aliquam mattis felis quis elit hendrerit mollis. Morbi eu turpis in turpis ornare sodales. Suspendisse leo enim, gravida at tellus nec, porttitor consequat purus. ',
+      likes: 1000,
+      retweets: 20,
+      imageUrl: 'https://unsplash.it/508/266',
+      imageAlt: 'a cool image',
     },
   ];
 
@@ -46,8 +60,8 @@ export class TweetServiceService {
   }
 
   like(id: number) {
-    const likedTweet = this.tweets.find((tweet) => tweet.id === id)
-    likedTweet.likes++
+    const likedTweet = this.tweets.find((tweet) => tweet.id === id);
+    likedTweet.likes++;
   }
 
   retweet(id: number) {

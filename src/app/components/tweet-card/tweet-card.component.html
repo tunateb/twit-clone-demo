@@ -1,0 +1,34 @@
+<div class="tweet-card" *ngFor="let tweet of tweets">
+  <div class="avatar-wrapper">
+    <img src="../../../assets/myAvatar.png" alt="" class="avatar" />
+  </div>
+  <div class="tweet-content">
+    <p class="profile-name-wrapper">
+      <strong>John</strong><span class="username">@John - 18h</span>
+    </p>
+    <p>{{ tweet.text }}</p>
+    <div *ngIf="tweet.imageUrl">
+      <img [src]="tweet.imageUrl" [alt]="tweet.imageAlt" class="tweet-img" />
+    </div>
+    <div class="tweet-icons">
+      <span
+        ><a routerLink="/"><i class="far fa-comment"></i></a
+        ><span class="tweet-action-count">{{ tweet.comments }}</span>
+      </span>
+
+      <span>
+        <button (click)="onRetweet(tweet.id)">
+          <i class="fas fa-retweet"></i>
+        </button>
+        <span class="tweet-action-count">{{ tweet.retweets }}</span>
+      </span>
+
+      <span>
+        <button (click)="onLike(tweet.id)"><i class="far fa-heart"></i></button>
+        <span class="tweet-action-count"> {{ tweet.likes }}</span>
+      </span>
+
+      <i class="fas fa-upload"></i>
+    </div>
+  </div>
+</div>

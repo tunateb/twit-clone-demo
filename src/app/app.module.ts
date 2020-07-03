@@ -6,9 +6,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { TwitPageComponent } from './pages/twit-page/twit-page.component';
+import { TweetCardComponent } from './components/tweet-card/tweet-card.component';
+import { ProfileCardComponent } from './components/profile-card/profile-card.component';
 
 @NgModule({
-  declarations: [AppComponent, HomePageComponent, TwitPageComponent],
+  declarations: [AppComponent, HomePageComponent, TwitPageComponent, TweetCardComponent, ProfileCardComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],

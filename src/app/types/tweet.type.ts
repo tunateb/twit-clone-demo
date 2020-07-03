@@ -1,7 +1,10 @@
 export type Tweet = {
   id?: number;
-  title: string;
+
   text: string;
   likes?: number;
   retweets?: number;
+  comments?: number;
+  imageUrl?: string;
+  imageAlt?: string;
 };

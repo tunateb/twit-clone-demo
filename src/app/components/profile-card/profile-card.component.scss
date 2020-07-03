@@ -1,0 +1,40 @@
+.profile-container {
+  border: 1px solid #3a444c;
+}
+
+.profile-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+
+  .profile-pic {
+    border-radius: 50%;
+    border: 3px solid #17202a;
+    transform: translateY(-50%);
+  }
+
+  .profile-action {
+    border: 1px solid #4ba0ec;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 10px 10px 10px 0px;
+    color: #4ba0ec;
+  }
+}
+
+.profile-content {
+  transform: translateY(-50%);
+  padding: 0 15px;
+
+  .profile-name {
+    margin: 10px 0;
+
+    h2 {
+      margin-bottom: 5px;
+    }
+
+    p {
+      color: #8a98a4;
+    }
+  }
+}
