@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
 import { TweetServiceService } from '../../services/tweet-service.service';
+import { Tweet } from '../../types/tweet.type';
+
 
 @Component({
   selector: 'app-tweet-card',
@@ -7,7 +9,11 @@ import { TweetServiceService } from '../../services/tweet-service.service';
   styleUrls: ['./tweet-card.component.scss'],
 })
 export class TweetCardComponent implements OnInit {
-  constructor(private tweetService: TweetServiceService) {}
+  @Input() tweet: Tweet;
+
+  constructor(
+    private tweetService: TweetServiceService,
+  ) {}
 
   ngOnInit(): void {}
 
@@ -21,5 +27,9 @@ export class TweetCardComponent implements OnInit {
 
   onRetweet(id: number) {
     this.tweetService.retweet(id);
+  }
+
+  goToComments(id: number) {
+    this.tweetService.goComments(id)
   }
 }

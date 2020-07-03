@@ -1,6 +1,8 @@
-<div class="tweet-card" *ngFor="let tweet of tweets">
+<div class="tweet-card">
   <div class="avatar-wrapper">
-    <img src="../../../assets/myAvatar.png" alt="" class="avatar" />
+    <a routerLink="/"
+      ><img src="../../../assets/myAvatar.png" alt="" class="avatar"
+    /></a>
   </div>
   <div class="tweet-content">
     <p class="profile-name-wrapper">
@@ -11,9 +13,11 @@
       <img [src]="tweet.imageUrl" [alt]="tweet.imageAlt" class="tweet-img" />
     </div>
     <div class="tweet-icons">
-      <span
-        ><a routerLink="/"><i class="far fa-comment"></i></a
-        ><span class="tweet-action-count">{{ tweet.comments }}</span>
+      <span>
+        <button (click)="goToComments(tweet.id)">
+          <i class="far fa-comment"></i>
+        </button>
+        <span class="tweet-action-count">{{ tweet.comments }}</span>
       </span>
 
       <span>

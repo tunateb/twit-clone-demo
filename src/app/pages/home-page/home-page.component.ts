@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TweetServiceService } from '../../services/tweet-service.service';
 
 @Component({
   selector: 'app-home-page',
@@ -6,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-page.component.scss'],
 })
 export class HomePageComponent implements OnInit {
-  constructor() {}
+  constructor(private tweetService: TweetServiceService) {}
 
   ngOnInit(): void {}
+
+  get tweets() {
+    return this.tweetService.tweets;
+  }
 }

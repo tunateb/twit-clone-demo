@@ -8,9 +8,10 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { TwitPageComponent } from './pages/twit-page/twit-page.component';
 import { TweetCardComponent } from './components/tweet-card/tweet-card.component';
 import { ProfileCardComponent } from './components/profile-card/profile-card.component';
+import { CommentCardComponent } from './components/comment-card/comment-card.component';
 
 @NgModule({
-  declarations: [AppComponent, HomePageComponent, TwitPageComponent, TweetCardComponent, ProfileCardComponent],
+  declarations: [AppComponent, HomePageComponent, TwitPageComponent, TweetCardComponent, ProfileCardComponent, CommentCardComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],

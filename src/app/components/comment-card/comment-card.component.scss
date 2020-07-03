@@ -1,0 +1,52 @@
+.comment-card {
+  border: 1px solid #3a444c;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+
+  .avatar {
+    border-radius: 50%;
+    width: 49px;
+    height: 49px;
+    margin: 0px 10px 0px 0px;
+  }
+
+  .reply-text {
+    color: #8a98a4;
+    margin: 5px 0;
+  }
+
+  .username {
+    color: #8a98a4;
+    margin-left: 5px;
+  }
+
+  .tweet-img {
+    border-radius: 14px;
+    margin: 15px 0px;
+  }
+
+  .tweet-icons {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 100px 15px 0px;
+
+    i {
+      text-decoration: none;
+      color: #8a98a4;
+    }
+
+    button {
+      background-color: transparent;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .tweet-action-count {
+      margin-left: 12px;
+      color: #8a98a4;
+    }
+  }
+}

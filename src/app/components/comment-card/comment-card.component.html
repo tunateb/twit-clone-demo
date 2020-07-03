@@ -1,0 +1,44 @@
+<div class="comment-card" *ngFor="let comment of comments">
+  <div class="avatar-wrapper">
+    <img src="https://unsplash.it/200/200" alt="" class="avatar" />
+  </div>
+  <div class="comment-content">
+    <p class="profile-name-wrapper">
+      <strong> {{ comment.commentedBy }} </strong
+      ><span class="username">@{{ comment.commentedBy }} - 18h</span>
+    </p>
+    <p class="reply-text">Replying to <a routerLink="/" class="link">@John</a></p>
+    <p>{{ comment.commentText }}</p>
+    <div *ngIf="comment.imageUrl">
+      <img
+        [src]="comment.imageUrl"
+        [alt]="comment.imageAlt"
+        class="tweet-img"
+      />
+    </div>
+    <div class="tweet-icons">
+      <span>
+        <button>
+          <i class="far fa-comment"></i>
+        </button>
+        <span class="tweet-action-count">{{ comment.comments }}</span>
+      </span>
+
+      <span>
+        <button (click)="onRetweet(comment.id)">
+          <i class="fas fa-retweet"></i>
+        </button>
+        <span class="tweet-action-count">{{ comment.retweets }}</span>
+      </span>
+
+      <span>
+        <button (click)="onLike(comment.id)">
+          <i class="far fa-heart"></i>
+        </button>
+        <span class="tweet-action-count"> {{ comment.likes }}</span>
+      </span>
+
+      <i class="fas fa-upload"></i>
+    </div>
+  </div>
+</div>

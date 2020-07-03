@@ -5,7 +5,7 @@ import { TwitPageComponent } from './pages/twit-page/twit-page.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
-  { path: 'tweet', component: TwitPageComponent },
+  { path: 'tweet/:id', component: TwitPageComponent },
 ];
 
 @NgModule({

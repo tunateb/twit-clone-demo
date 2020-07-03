@@ -1,8 +1,8 @@
 <div class="container">
   <div class="grid-container">
-    <div class="tweets-wrapper" >
+    <div class="tweets-wrapper">
       <app-profile-card></app-profile-card>
-      <app-tweet-card></app-tweet-card>
+      <app-tweet-card *ngFor="let tweet of tweets" [tweet] = "tweet"></app-tweet-card>
     </div>
   </div>
 </div>

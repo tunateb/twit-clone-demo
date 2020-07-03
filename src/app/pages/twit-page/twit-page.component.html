@@ -1,18 +1,4 @@
 <div class="container">
-  <form action="#" (submit)="onSubmit()">
-    <div class="form-control">
-      <label for="tweet-area"></label>
-      <textarea
-        name="tweet-area"
-        id="tweet-area"
-        cols="80"
-        rows="10"
-        placeholder="Tweet..."
-        [(ngModel)]="tweet.text"
-      ></textarea>
-    </div>
-    <div class="form-actions">
-      <button class="btn" type="submit">Tweet</button>
-    </div>
-  </form>
+  <app-tweet-card [tweet]="tweet"></app-tweet-card>
+  <app-comment-card [tweet]="tweet"></app-comment-card>
 </div>
