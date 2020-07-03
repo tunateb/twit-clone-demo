@@ -100,17 +100,6 @@ export class TweetServiceService {
 
   constructor(private router: Router) {}
 
-  submitTweet(tweet: Tweet): void {
-    const newTweet: Tweet = {
-      id: Math.random(),
-      ...tweet,
-      likes: 0,
-      retweets: 0,
-    };
-
-    this.tweets.unshift(newTweet);
-  }
-
   like(id: number) {
     const likedTweet = this.tweets.find((tweet) => tweet.id === id);
     likedTweet.likes++;
@@ -124,5 +113,18 @@ export class TweetServiceService {
   goComments(id: number) {
     const targetedTweet = this.tweets.find((tweet) => tweet.id === id);
     this.router.navigateByUrl(`/tweet/${targetedTweet.id}`);
+  }
+
+  submitComment(comment, id) {
+    const newComment = {
+      id: Math.random(),
+      ...comment,
+      likes: 0,
+      retweets: 0,
+      commentedBy: 'Tuna',
+    };
+
+    const targetedTweet = this.tweets.find((tweet) => tweet.id === id);
+    targetedTweet.commentDetails.unshift(comment);
   }
 }
